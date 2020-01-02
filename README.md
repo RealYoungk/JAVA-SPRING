@@ -100,3 +100,7 @@
 
 ### 스트림
 - costomerList.stream().filter(c->c.getAge() >= 20).map(c->c.getName()).sort().forEach(s->System.out.println(s));
+
+### 향상된 try with resource
+- try(AutoCloseObj obj = new AutoCloseObj()){} catch{} finally{}
+- java 9 부터 트라이 괄호 안에 선언하지 않아도 자동으로 클로즈 됨.
