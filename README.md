@@ -100,7 +100,16 @@
 
 ### 스트림
 - costomerList.stream().filter(c->c.getAge() >= 20).map(c->c.getName()).sort().forEach(s->System.out.println(s));
-
+- I/O 대상 기준 : 입력 스트림 / 출력 스트림
+- 자료의 종류 : 바이트 스트림 / 문자 스트림
+- 스트림의 기능 : 기반 스트림 / 보조 스트림 : 입출력은 없으나 바이트를 문자로 바꿔준다던지, 버퍼링 기능등 추가적인 기능을 제공
+- 데코레이터 디자인 패턴 : 상속보다 유연하게 기능을 확장 할 수 있음. 
 ### 향상된 try with resource
 - try(AutoCloseObj obj = new AutoCloseObj()){} catch{} finally{}
 - java 9 부터 트라이 괄호 안에 선언하지 않아도 자동으로 클로즈 됨.
+
+### 사용자 정의 예외처리
+- Exception을 상속받아서 예외클래스 만들고 클래스에서 if인 경우 throw new 예외 하고 클래스 뒤에 throws 예외 하고 그 예외가 발생한 지점에서 try catch문으로 예외를 처리한다
+
+
+
