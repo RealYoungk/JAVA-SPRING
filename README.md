@@ -111,5 +111,7 @@
 ### 사용자 정의 예외처리
 - Exception을 상속받아서 예외클래스 만들고 클래스에서 if인 경우 throw new 예외 하고 클래스 뒤에 throws 예외 하고 그 예외가 발생한 지점에서 try catch문으로 예외를 처리한다
 
+### 직렬화
+- 객체를 주고받는 방식 interface serialization 해줘야지 주고받을 수 있음
 
 
